@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LA DUA – Fashion</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <!-- HEADER / NAVIGATION -->
+  <header class="header">
+    <div class="header-top">
+      <div class="logo">
+        <img src="images/logo.png" alt="LA DUA Logo">
+      </div>
+
+      <!-- Suchleiste -->
+      <div class="search-bar">
+        <input type="text" id="searchInput" placeholder="Suche nach Produkten..." />
+        <button id="searchBtn">Suchen</button>
+      </div>
+
+      <!-- Benutzer / Account -->
+      <div class="header-actions">
+        <button id="loginBtn" class="link-btn">Anmelden</button>
+        <button id="cartBtn" class="link-btn">Warenkorb (0)</button>
+      </div>
+    </div>
+
+    <!-- Navigation unterhalb -->
+    <nav class="main-nav">
+      <ul>
+        <li><a href="#produkte">Produkte</a></li>
+        <li><a href="#sonderangebote">Sonderangebote</a></li>
+        <li><a href="#kontakt">Kontakt</a></li>
+        <li><a href="#socials">Socials</a></li>
+        <li><a href="#vips">VIPs</a></li>
+        <li><a href="#warenkorb">Warenkorb</a></li>
+        <li><a href="#account">Anmelden</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HAUPTBEREICH -->
+  <main>
+    <!-- Hero / Intro -->
+    <section class="hero">
+      <h1>LA DUA</h1>
+      <p>Wear your dua. Live your purpose.</p>
+      <a href="#produkte" class="primary-btn">Kollektion entdecken</a>
+    </section>
+
+    <!-- Produkte -->
+    <section id="produkte" class="section">
+      <h2>Produkte</h2>
+      <div id="productGrid" class="product-grid">
+        <!-- Produkte werden später per JavaScript aus JSON geladen -->
+      </div>
+    </section>
+
+    <!-- Sonderangebote -->
+    <section id="sonderangebote" class="section">
+      <h2>Sonderangebote</h2>
+      <div id="offerGrid" class="product-grid">
+        <!-- Später speziell markierte Produkte -->
+      </div>
+    </section>
+
+    <!-- VIPs -->
+    <section id="vips" class="section">
+      <h2>VIPs</h2>
+      <p>Hier könnte z. B. ein Bereich für Stammkunden, Rabattcodes oder exklusive Drops kommen.</p>
+    </section>
+
+    <!-- Socials -->
+    <section id="socials" class="section">
+      <h2>Socials</h2>
+      <ul class="social-list">
+        <li><a href="#" target="_blank">Instagram</a></li>
+        <li><a href="#" target="_blank">TikTok</a></li>
+        <li><a href="#" target="_blank">Facebook</a></li>
+      </ul>
+    </section>
+
+    <!-- Kontakt -->
+    <section id="kontakt" class="section">
+      <h2>Kontakt</h2>
+      <p>E-Mail: <a href="mailto:info@ladua-shop.com">info@ladua-shop.com</a></p>
+      <p>WhatsApp: <a href="https://wa.me/43DEINE_NUMMER" target="_blank">Nachricht senden</a></p>
+    </section>
+
+    <!-- Warenkorb / Account Platzhalter -->
+    <section id="warenkorb" class="section">
+      <h2>Warenkorb</h2>
+      <div id="cartContent">
+        <p>Noch keine Artikel im Warenkorb.</p>
+      </div>
+    </section>
+
+    <section id="account" class="section">
+      <h2>Dein Konto</h2>
+      <p>Hier wird später Login / Registrierung erscheinen.</p>
+      <button id="openLoginModal" class="primary-btn">Jetzt anmelden</button>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>© <span id="year"></span> LA DUA. Alle Rechte vorbehalten.</p>
+  </footer>
+
+  <!-- Später: Login-Modal -->
+  <div id="loginModal" class="modal hidden">
+    <div class="modal-content">
+      <span class="modal-close" id="closeLoginModal">&times;</span>
+      <h2>Anmelden</h2>
+      <p>(Hier bauen wir später Firebase-Login ein.)</p>
+      <form id="loginForm">
+        <label>E-Mail</label>
+        <input type="email" required>
+        <label>Passwort</label>
+        <input type="password" required>
+        <button type="submit" class="primary-btn">Login</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
